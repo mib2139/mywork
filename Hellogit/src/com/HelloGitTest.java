@@ -1,8 +1,15 @@
 package com;
 
+import java.util.Scanner;
+
 public class HelloGitTest {
 	public static void main(String[] args) {
 		System.out.println("hello");
-		System.out.println("¿þ ¾È´ë ¤» ");
+
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String name = sc.next();
+		
 	}
 }
