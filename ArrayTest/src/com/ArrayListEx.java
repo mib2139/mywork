@@ -20,5 +20,7 @@ public class ArrayListEx {
 			System.out.println(a.get(i));
 			
 		}
+		
+		//가장 긴 이름 
 	}
 }
