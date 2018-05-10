@@ -13,6 +13,7 @@ public class InteratorEx {
 		v.add(-1);
 		v.add(2, 100);
 
+		//Iterator 로 정수 모든 정수 출력하기
 		Iterator<Integer> it = v.iterator();
 		
 		while (it.hasNext()) {
@@ -22,8 +23,8 @@ public class InteratorEx {
 			int sum = 0;
 			it = v.iterator();
 			while (it.hasNext()) {
-				int m = it.next();
-				sum += m;
+				n = it.next();
+				sum += n;
 				
 			}
 			System.out.println("백터에 있는 정수의 합 : " +sum);

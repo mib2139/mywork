@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<SCRIPT type="text/javascript">
+		function check_joinclick() {
+			joinForm = document.Joinform;
+
+			if (loginForm.id.value == "" || loginForm.pw.value == "") {
+				alert("필수 입력란이 비었습니다. 확인해 주세요.");
+			} else {
+				alert("가입을 축하합니다.");
+				joinForm.submit();
+			}
+		}
+	</SCRIPT>
+
+
+
+	<form name="Joinform" method="post" action="join.jsp">
+		ID: <br> <input type="text" name="id" size="15">
+		<p>
+		PW: <br> <input type="password" name="pw" size="15">
+		<p>
+		<input  type="button" value="JOIN" onclick="check_joinclick()"/>
+</body>
+</html>

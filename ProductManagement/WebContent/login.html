@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=UTF-8>
+<title>login</title>
+</head>
+<body>
+
+	<SCRIPT type="text/javascript"> 
+ function check_onclick(){
+  loginForm=document.loginform;
+  
+  if(loginForm.id.value=="" || loginForm.pw.value=="" ){
+   alert("필수 입력란이 비었습니다. 확인해 주세요.");
+  }
+  else{
+   alert("환영합니다.");
+	loginForm.submit();
+  }
+ }
+</SCRIPT>
+
+	<H2>Login</H2>
+	<form name="loginform" method="post" action="login.jsp">
+		id: <br> <input type="text" name="id" size="15">
+		<p>
+			pw: <br> <input type="password" name="pw" size="15">
+		<p>
+		<div>
+			<input type="button" value="LOGIN" onclick="check_onclick()" />
+		</div>
+	</form><p>
+	
+	<form method="post" action="Join.html">
+		<input type="submit" value="JOIN" />
+	</form>
+
+</body>
+</html>
