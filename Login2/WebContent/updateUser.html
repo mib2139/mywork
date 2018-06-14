@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="ja" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>업데이트 유저</title>
+</style>
+<!-- <script type="text/javascript"> 
+ function check_onclick(){
+  loginForm=document.loginForm;
+  
+  if(loginForm.id.value=="" || loginForm.pw.value==""){
+   alert("필수 입력란이 비었습니다. 확인해 주세요.");
+  }
+  else{
+   //alert("서버로 전송합니다.");
+   loginForm.submit();
+  }
+ }
+</script> -->
+
+</head>
+
+<body>
+
+<form name="updateForm" method="post" action="updateprocess.jsp">
+<table style="width: 250" align="center" border="1">
+	<tr>
+		<td colspan="2" align="center" bgcolor="skyblue"><b>updateUser</b></td>
+	</tr>
+	<tr>
+		<td style="width: 81px" align="center">아이디</td>
+		<td style="width: 73px">
+			<input name="id" type="text" size="10" maxlength="20" />
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 81px" align="center">변경비밀번호</td>
+		<td style="width: 73px">
+			<input name="pw" type="password" size="10" maxlength="20"/>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+			<input type="submit" value="확인"/>
+		</td>
+		
+	</tr>
+</table>
+</form>
+</body>
+</html>
