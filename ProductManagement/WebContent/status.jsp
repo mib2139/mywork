@@ -10,17 +10,16 @@
 <body>
 	<%
 		// 쿼리문
-		String query = "select * from pm";
+			String query = "select * from pm";
 
-		// 커넥션 연결
-		Connection conn = DBconnection.getConnection();
+			// 커넥션 연결
+			Connection conn = DBconnection.getConnection();
 
-		// DB에 쿼리문을 보낸다.
-		PreparedStatement pstmt = conn.prepareStatement(query);
+			// DB에 쿼리문을 보낸다.
+			PreparedStatement pstmt = conn.prepareStatement(query);
 
-		// 쿼리문의 결과값을 rs에 담는다.
-		ResultSet rs = pstmt.executeQuery();
-
+			// 쿼리문의 결과값을 rs에 담는다.
+			ResultSet rs = pstmt.executeQuery();
 	%>
 
 	<center>
@@ -46,7 +45,11 @@
 			</tr>
 
 			<%} %>
+		<p>
 		</table>
+			<form action="insert.jsp">
+			<input type="submit" value="추가하기">
+			</form>
 	</center>
 </body>
 </html>

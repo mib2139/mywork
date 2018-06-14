@@ -7,24 +7,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Login</title>
+<title>delete</title>
 </head>
 <body>
 	<%
-		
 		String model = request.getParameter("model");
-		String sql = "select * from pm where model =?";
-		
-		Connection conn = DBconnection.getConnection();
-		
-		PreparedStatement pstmt = conn.prepareStatement(sql);
-       	pstmt.setString(1, model); 
-       	
-       	int count = pstmt.executeUpdate();
-       	
-       	if(count>0){ out.print("정상적으로 삭제 되었습니다");}
-       	else {out.print("삭제에 실패했습니다.");}
-       
+			String sql = "delete from pm where model =?";
+			
+			Connection conn = DBconnection.getConnection();
+			
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+	       	pstmt.setString(1, model); 
+	       	
+	       	int count = pstmt.executeUpdate();
+	       	
+	       	if(count>0){ out.print("정상적으로 삭제 되었습니다");}
+	       	else {out.print("삭제에 실패했습니다.");}
 	%>
 	<br>
 	<br>
