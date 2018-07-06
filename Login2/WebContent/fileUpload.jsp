@@ -12,6 +12,7 @@
 
 <%
 	String path ="C:/Users/user42/eclipse-workspace/Login2/WebContent/data";
+	int size = 10;
 	myfile.upload(path, request, size);
 	
 %>

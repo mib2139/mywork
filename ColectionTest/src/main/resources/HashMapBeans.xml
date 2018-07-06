@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="mymap" class="HashMapTest">
+		<constructor-arg>
+			<map>
+				<entry key="Kim" value="86" />
+				<entry key="Choi" value="89" />
+				<entry key="Park" value="90" />
+				<entry key="Ju" value="90" />
+			</map>
+		</constructor-arg>
+	</bean>
+</beans>
