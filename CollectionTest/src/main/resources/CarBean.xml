@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="carlist" name="carlist" class="CarList">
+		<property name="list">
+			<list>
+				<value>1</value>
+				<ref bean="car1" />
+
+				<value>2</value>
+				<ref bean="car2" />
+
+				<value>3</value>
+				<ref bean="car3" />
+
+			</list>
+		</property>
+
+
+		<property name="maps">
+			<map>
+				<entry key="au01"  value-ref="car1"></entry>
+				<entry key="bt02"  value-ref="car2"></entry>
+				<entry key="fox03" value-ref="car3"></entry>
+			</map>
+		</property>
+	</bean>
+
+
+	<bean id="car1" name="car1" class="Car">
+		<property name="model" value="audi"></property>
+		<property name="color" value="red"></property>
+		<property name="company" value="아우디"></property>
+		<property name="price" value="9000"></property>
+	</bean>
+
+	<bean id="car2" name="car2" class="Car">
+		<property name="model" value="벤츠"></property>
+		<property name="color" value="yellow"></property>
+		<property name="company" value="Benz"></property>
+		<property name="price" value="10000"></property>
+	</bean>
+
+	<bean id="car3" name="car3" class="Car">
+		<property name="model" value="fox"></property>
+		<property name="color" value="white"></property>
+		<property name="company" value="폭스바겐"></property>
+		<property name="price" value="11000"></property>
+	</bean>
+</beans>
