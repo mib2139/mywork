@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="customer" name="customer" class="Customer">
+		<property name="sets">
+			<set>
+				<value>1</value>
+				<ref bean="person" />
+				<bean class="Person">
+					<property name="name" value="gntpSet"></property>
+					<property name="address" value="Masan"></property>
+					<property name="age" value="26"></property>
+				</bean>
+
+				<value>2</value>
+				<ref bean="student" />
+			</set>
+		</property>
+
+		<property name="maps">
+			<map>
+				<entry key="key1" value="BlackPink"></entry>
+				<entry key="key2" value-ref="person"></entry>
+				<entry key="key3">
+					<bean class="Person">
+						<property name="name" value="Gntppp"></property>
+						<property name="address" value="changwon"></property>
+						<property name="age" value="30"></property>
+					</bean>
+				</entry>
+			</map>
+		</property>
+	</bean>
+
+
+	<bean id="person" name="person" class="Person">
+		<property name="name" value="techjava"></property>
+		<property name="address" value="창원시"></property>
+		<property name="age" value="26"></property>
+	</bean>
+
+	<bean id="student" name="student" class="Student">
+		<constructor-arg name="name" value="techjava"></constructor-arg>
+	</bean>
+
+</beans>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="customer" name="customer" class="Customer">
+		<property name="list">
+			<list>
+				<value>1</value>
+				<ref bean="person" />
+				<bean class="Person">
+				<property name="name" value="gntpSet"></property>
+				<property name="address" value="gntpSet"></property>
+				<property name="age" value="gntpSet"></property>
+				</bean>
+
+				<value type="Student">2</value>
+				<ref bean="student" />
+			</list>
+		</property>
+	</bean>
+
+
+	<bean id="student" name="student" class="Student">
+		<constructor-arg name="name" value="techjava"></constructor-arg>
+	</bean>
+
+
+	<bean id="person" name="person" class="Person">
+		<property name="name" value="techjava"></property>
+		<property name="address" value="창원시"></property>
+		<property name="age" value="26"></property>
+	</bean>
+</beans>
