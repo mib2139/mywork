@@ -3,7 +3,7 @@
 	pageEncoding="UTF-8"%>
 
 <%@page import="java.util.*"%>
-<%@ page import="org.gntp.beans.*"%>
+<%@page import="org.gntp.beans.*"%>
 
 <jsp:useBean id="myfile" class="org.gntp.beans.MyFile"></jsp:useBean>
 <jsp:useBean id="inven" class="org.gntp.beans.InventoryBean"

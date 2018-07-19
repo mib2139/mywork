@@ -3,14 +3,12 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
 	<bean id="mycar" name="car" class="Car">
 		<property name="model" value="sonata"></property>
 		<property name="company" value="hyundai"></property>
 		<property name="color" value="red"></property>
 		<property name="price" value="1000"></property>
 	</bean>
-
 
 	<bean id="student" name="student" class="Student">
 		<property name="studentNum" value="r2617105"></property>
