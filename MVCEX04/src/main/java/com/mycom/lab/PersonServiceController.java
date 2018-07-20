@@ -23,11 +23,14 @@ public class PersonServiceController {
 	@RequestMapping(value="person.do", method=RequestMethod.GET)
 	protected String personInput(ModelMap model) throws Exception{
 		model.addAttribute("personinfo", new person());
+		//personinfo와 person객체를 연결.
 		//person객체를 생성하여 personinfo라는 이름으로 model에 넣어브려
+		//띄우는건 personform을 뛰워야지 return을 form으로 했스니까
 		return getFormView();
 	}
 
 	@RequestMapping(value="/person.do", method=RequestMethod.POST)
+	//일을 마치고 나면 person이 post방식으로 오게됨.
 	protected String register(@ModelAttribute("personinfo") person command,
 			BindingResult errors, ModelMap model) throws Exception{
 		//만약 person으로 들어오면 컨트롤러가 personinfo로 감, 그리고 person객체와 연관이 되어있음
@@ -37,7 +40,7 @@ public class PersonServiceController {
 		}
 
 		model.addAttribute("pinfo", command);
-		//성공하면 pinfo로 successView에 연결되는 거임.
+		//성공하면 pinfo로 successView에 모델로 넘겨줌 되는 거임.
 		return successView;
 	}
 

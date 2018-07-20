@@ -44,12 +44,16 @@ public class HomeController {
 	
 	@RequestMapping(value= "hello.do")
 	public String helloworldId() {
+		//home 에서 hello.do가 들어오면 컨드롤러로 넘어와서 이친구와mapping 됨.
+		//페이지를 걍 스트링으로 넘겨준거임.
 		return getViewName();
 	}
 	
 	@RequestMapping(value= "hello2.do")
 	public ModelAndView  helloworldId2() {
 		ModelAndView mav = new ModelAndView(viewName);
+		//여기에는 model과 view를 같이 넘김. 
+		//모델과 뷰가 붙어서있어서 pojo + jsp가 함께 붙어있는것
 		return mav;
 	}
 	
