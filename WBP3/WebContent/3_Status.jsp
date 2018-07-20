@@ -15,7 +15,7 @@
 %>
 
 
-<jsp:useBean id="myfile" class="org.gntp.beans.MyFile"></jsp:useBean>
+<jsp:useBean id="myfile2" class="org.gntp.beans.Myfile2"></jsp:useBean>
 <jsp:useBean id="inven" class="org.gntp.beans.InventoryBean"
 	scope="page"></jsp:useBean>
 <jsp:useBean id="member" class="org.gntp.beans.Member" scope="page"></jsp:useBean>

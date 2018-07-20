@@ -98,8 +98,8 @@
 
 						<tr align="center">
 							<td>사진</td>
-							<td><input type="file" name="fileName1" /><br /> <input
-								id="file" type="hidden" name="cmd" value="update" /><br />
+							<td><input type="file" name="fileName1" /><br /> 
+							<input id="file" type="hidden" name="cmd" value="update" /><br />
 						</tr>
 
 						<tr align="center">

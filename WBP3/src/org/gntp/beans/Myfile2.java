@@ -43,7 +43,6 @@ public class Myfile2 {
 			// request,파일저장경로,용량,인코딩타입,중복파일명에 대한 기본 정책
 			multi = new MultipartRequest(request,uploadPath,maxSize,"utf-8",new DefaultFileRenamePolicy());
 
-			// form내의 input name="name" 인 녀석 value를 가져옴
 			String model = multi.getParameter("model");
 			String id = multi.getParameter("id");
 			fileName1 = multi.getParameter("fileName1");
