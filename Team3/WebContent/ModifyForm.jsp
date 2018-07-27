@@ -107,9 +107,9 @@
 				</tbody>
 			</table>
 			<div class="txt-rt mt20">
-				<input type="button" value="글저장" onclick="form.submit()" /> <input
-					type="button" value="목록"
-					onclick="location.href='<%=request.getContextPath()%>/ListCon.jsp'" />
+				<input type="button" value="글저장" onclick="form.submit()" /> 
+				<input type="button" value="삭제" onclick="location.href='<%=request.getContextPath()%>/RemoveAction.jsp?num=<%=num%>'" />
+				<input type="button" value="목록" onclick="location.href='<%=request.getContextPath()%>/ListCon.jsp'" />
 			</div>
 		</div>
 

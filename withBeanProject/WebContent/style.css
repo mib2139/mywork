@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+H1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 70px;
+	color: skyblue;
+}
+
+
+loginform {
+	margin: 0 auto;
+	width: 250px;
+}
+
+.container {
+	position: absolute;
+	left: 200px;
+	top: 550px;
+}
+
+.gwd-button-114m {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #008CBA;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.gwd-button-114m span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.gwd-button-114m span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.gwd-button-114m:hover span {
+	padding-right: 25px;
+}
+
+.gwd-button-114m:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.status_table {
+	border-collapse: collapse;
+	background: #fff;
+	border: 0px;
+}
+
+.status_table th {
+	padding: 10px;
+	color: #168;
+	border-bottom: 3px solid #168;
+	text-align: left;
+}
+
+.status_table td {
+	color: #669;
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.status_table tr:hover td {
+	color: #001;
+}
+
+#demotext {
+color: rgb(255, 255, 255);
+background-color: rgb(139, 163, 193);
+text-shadow: rgb(122, 122, 122) 4px 3px 0px;
+font-size: 100px;
+font-family: Montserrat;
+}
+.joinForm{
+  font: 400 0.875rem/1.5 "Open Sans", sans-serif;
+  margin: 0;
+  min-height: 100%;
+}
+
+
+.update_table {
+	border-collapse: collapse;
+	background: #fff;
+	border: 0px;
+}
+
+.update_table th {
+	padding: 10px;
+	color: #168;
+	border-bottom: 3px solid #168;
+	text-align: left;
+}
+
+.update_table td {
+	color: #669;
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}

@@ -8,8 +8,8 @@
 </head>
 <body>
 <%
-    if(request.getParameter("id") == null) {
-        response.sendRedirect(request.getContextPath()+"/customerList.jsp");
+    if(request.getParameter("num") == null) {
+        response.sendRedirect(request.getContextPath()+"/ListCon.jsp");
     } else {
         String num = request.getParameter("num");
         String dbUrl = "jdbc:mysql://localhost:3307/pmsystem";
@@ -20,7 +20,7 @@
         try {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(dbUrl, dbUser, dbPw);
-            String sql = "DELETE FROM employee WHERE num=?";
+            String sql = "DELETE FROM team WHERE num=?";
             statement = connection.prepareStatement(sql);
             statement.setString(1, num);
             if(statement.executeUpdate()==1){
