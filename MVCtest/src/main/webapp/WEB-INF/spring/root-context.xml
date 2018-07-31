@@ -27,9 +27,9 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 		<property name="driverClassName"
 			value="com.mysql.jdbc.Driver"></property>
 		<property name="url"
-			value="jdbc:mysql://localhost:3307/pmsystem"></property>
-		<property name="username" value="root"></property>
-		<property name="password" value="user123456789"></property>
+			value="jdbc:mysql://175.126.226.121:3306/hrdgntp3"></property>
+		<property name="username" value="hrdgntp3"></property>
+		<property name="password" value="hrdgntp3!@#"></property>
 	</bean>
 
 
