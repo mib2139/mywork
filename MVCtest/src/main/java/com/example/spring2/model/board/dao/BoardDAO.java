@@ -17,5 +17,6 @@ public interface BoardDAO {
     public List<BoardVO> listAll() throws Exception;
     // 06. 게시글 조회 증가
     public void increaseViewcnt(int bno) throws Exception;
+   
 }
 

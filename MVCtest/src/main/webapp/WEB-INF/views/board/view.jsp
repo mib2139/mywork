@@ -43,8 +43,7 @@
 
 					<tr>
 						<th>수정 날짜</th>
-						<td><fmt:formatDate pattern="yyyy-MM-dd"
-								value="${dto.regdate}" /></td>
+						<td><input name="regdate" value="${dto.regdate}" readonly="readonly" style="width: 199px; "/></td>
 					</tr>
 					<tr>
 						<th>내용</th>

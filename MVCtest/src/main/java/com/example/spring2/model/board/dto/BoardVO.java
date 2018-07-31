@@ -7,7 +7,7 @@ public class BoardVO {
 	private String title;       // 게시글 제목
 	private String content;     // 게시글 내용
 	private String writer;      // 게시글 작성자
-	private Date regdate;       // 게시글 작성일자 util.Date
+	private String regdate;     // 게시글 작성일자 util.Date
 	private int viewcnt;        // 게시글 조회수
 
 
@@ -36,10 +36,10 @@ public class BoardVO {
 	public void setWriter(String writer) {
 		this.writer = writer;
 	}
-	public Date getRegdate() {
+	public String getRegdate() {
 		return regdate;
 	}
-	public void setRegdate(Date regdate) {
+	public void setRegdate(String regdate) {
 		this.regdate = regdate;
 	}
 	public int getViewcnt() {
@@ -54,6 +54,7 @@ public class BoardVO {
 		return "BoardVO [bno=" + bno + ", title=" + title + ", content=" + content + ", writer=" + writer + ", regdate="
 				+ regdate + ", viewcnt=" + viewcnt + "]";
 	}
+	
 
 }
 

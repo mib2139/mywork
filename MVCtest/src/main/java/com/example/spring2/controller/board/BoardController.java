@@ -29,13 +29,15 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.example.spring2.HomeController;
 import com.example.spring2.model.board.dto.BoardVO;
+import com.example.spring2.model.board.dto.ImageVO;
 import com.example.spring2.service.board.BoardService;
+import com.example.spring2.service.board.ImageService;
+import com.example.spring2.service.board.ImageServiceImpl;
 @Controller    // 현재 클래스를 컨트롤러 빈(bean)으로 등록
 @RequestMapping("/board/*")
 public class BoardController {
 
-	// 의존관계 주입 => BoardServiceImpl 생성;
-	// IoC 의존관계 역전
+	
 	@Inject
 	BoardService boardService;
 
@@ -96,5 +98,23 @@ public class BoardController {
 		return "redirect:list.do";
 	}
 	
+	@RequestMapping(value="fileUpload.do", method=RequestMethod.GET)
+	public String fileUpload(){
+		return "board/fileUpload"; 
+	}
+	
+	
+	@RequestMapping(value="insertimg.do", method=RequestMethod.POST)
+	public String insertimage(HttpServletRequest request){
+		ImageService is = new ImageServiceImpl();
+		is.upload(request);
+
+		return "redirect:fileUpload.do"; 
+	}
+	
+	public String insertimg(@ModelAttribute ImageVO vo) throws Exception{
+		
+		return "redirect:list.do";
+	}
 }
 

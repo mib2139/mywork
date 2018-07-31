@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.*, java.text.*"%>
+<%@	taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,7 +44,7 @@
 
 	<%
 		Date date = new Date();
-		SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS");
 		String strdate = simpleDate.format(date);
 	%>
 
@@ -58,6 +59,11 @@
 				</colgroup>
 				<tbody>
 					<tr>
+						<th>글번호</th>
+						<td><input name="bno" type="text" size="63" maxlength="20" /></td>
+					</tr>
+
+					<tr>
 						<th>작성자</th>
 						<td><input name="writer" type="text" size="63" maxlength="20" /></td>
 					</tr>
@@ -67,7 +73,7 @@
 					</tr>
 					<tr>
 						<th>작성 날짜</th>
-						<td><input name="time" size="63" value="<%=strdate%>"
+						<td><input name="regdate" size="63" value="<%=strdate%>"
 							maxlength="20" readonly="readonly" /></td>
 					</tr>
 					<tr>

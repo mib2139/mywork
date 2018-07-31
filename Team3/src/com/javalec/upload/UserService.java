@@ -15,7 +15,7 @@ public class UserService {
 
 
 	public boolean upload(HttpServletRequest request) {
-		String uploadPath = "C:/Users/user42/Documents/카카오톡 받은 파일/Team3/WebContent/images";
+		String uploadPath = "C:/Git/Team3/WebContent/images";
 		int maxSize = 1024 * 1024 * 10;
 
 		String fileName1 = ""; // 占쌩븝옙처占쏙옙占쏙옙 占싱몌옙

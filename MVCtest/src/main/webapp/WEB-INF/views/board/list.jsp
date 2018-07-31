@@ -5,13 +5,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/resources/css/style.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>공지사항</title>
 </head>
 <body>
-
+<H1 align="center">공지사항</H1>
 	<div id="wrap">
 		<table border="1" width="600px" class="tbl_List">
 			<caption>Board</caption>
@@ -41,7 +40,7 @@
 						${row.bno}</a></td>
 						<td>${row.title}</td>
 						<td>${row.writer}</td>
-						<td><fmt:formatDate pattern="yyyy-MM-dd" value="${row.regdate}" /></td>
+						<td>${row.regdate}</td>
 						<td>${row.viewcnt}</td>
 					</tr>
 				</c:forEach>
